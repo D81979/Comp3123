@@ -65,7 +65,7 @@ app.get("/students/:name/:age", (request, response) => {
 
     // if name is null / age is null -> Error
     if (!request.params.name || !request.params.age){
-        return response.status(400).json({error: "You must pass in name anf age"})
+        return response.status(400).json({error: "You must pass in name and age"})
     }
 
     const name = request.params.name
